@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tr:Trajectoire
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tr='http://www.univ-grenoble-alpes.fr/trajectoires'
+    xsi:schemaLocation='http://www.univ-grenoble-alpes.fr/trajectoires Trajectoire.xsd'>
+    <tr:pos>
+        <tr:x>3</tr:x>
+        <tr:y>1</tr:y>
+        <tr:z>0</tr:z>
+    </tr:pos>
+    <tr:pos>
+        <tr:x>4</tr:x>
+        <tr:y>2</tr:y>
+        <tr:z>0</tr:z>
+    </tr:pos>
+    <tr:pos>
+        <tr:x>4</tr:x>
+        <tr:y>2</tr:y>
+        <tr:z>-1</tr:z>
+    </tr:pos>
+</tr:Trajectoire>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+
+<xs:schema version="1.0"
+           targetNamespace="http://www.univ-grenoble-alpes.fr/trajectoires"
+           xmlns:pos="http://www.univ-grenoble-alpes.fr/trajectoires"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="Trajectoire" type="pos:Pos"/>
+    
+    <xs:complexType name="Trajectoire">
+        <xs:sequence>
+           <xs:element name="pos" type="pos:Coord"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+     <xs:complexType name="Coord">
+        <xs:sequence>
+            <xs:element name="x" type="xs:double"/>
+            <xs:element name="y" type="xs:double"/>
+            <xs:element name="z" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

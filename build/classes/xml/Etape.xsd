@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.ujf-grenoble.fr/l3miage/etape"
+           xmlns:etp="http://www.ujf-grenoble.fr/l3miage/etape"
+           xmlns:pos="http://www.ujf-grenoble.fr/l3miage/trajectoire"
+           elementFormDefault="qualified">
+    <xs:import namespace="http://www.ujf-grenoble.fr/l3miage/trajectoire" schemaLocation="trajectoires.xsd"/>
+    <xs:element name="etape" type="etp:Etape"/>
+    
+    <xs:complexType name="Etape">
+        <xs:sequence>
+            <xs:element name="depart" type="pos:Pos"/>
+            <xs:element name="arrivee" type="pos:Pos"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
